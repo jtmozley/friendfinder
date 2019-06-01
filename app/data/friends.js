@@ -85,84 +85,84 @@ const friends = [
 
     },
     {
-        "name":,
-        "photo":,
+        "name": "Brandon",
+        "photo": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
         "scores": [
-            3,
-            5,
             1,
             5,
-            4,
+            3,
+            5,
+            3,
+            2,
             2,
             1,
-            1,
-            3,
+            5,
             2
         ]
 
     },
     {
-        "name":,
-        "photo":,
+        "name": "Stephen",
+        "photo": "https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
         "scores": [
             3,
-            5,
+            4,
+            1,
+            4,
+            4,
+            1,
             1,
             5,
+            3,
+            1
+        ]
+
+    },
+    {
+        "name": "Veronica",
+        "photo": "https://images.pexels.com/photos/1082962/pexels-photo-1082962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "scores": [
             4,
+            5,
+            2,
+            5,
+            5,
+            2,
             2,
             1,
-            1,
-            3,
+            4,
             2
         ]
 
     },
     {
-        "name":,
-        "photo":,
+        "name": "Zeke",
+        "photo": "https://images.pexels.com/photos/450271/pexels-photo-450271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
         "scores": [
             3,
-            5,
-            1,
-            5,
             4,
-            2,
             1,
-            1,
+            4,
+            4,
             3,
-            2
+            1,
+            2,
+            3,
+            1
         ]
 
     },
     {
-        "name":,
-        "photo":,
+        "name": "Jordan",
+        "photo": "https://images.pexels.com/photos/462680/pexels-photo-462680.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
         "scores": [
-            3,
-            5,
             1,
             5,
-            4,
+            5,
+            5,
             2,
-            1,
-            1,
-            3,
-            2
-        ]
-
-    },
-    {
-        "name":,
-        "photo":,
-        "scores": [
-            3,
-            5,
-            1,
-            5,
-            4,
             2,
-            1,
+            5,
             1,
             3,
             2
