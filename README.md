@@ -1,7 +1,7 @@
 # FriendFinder
 
 ## Deployment
-Site is deployed to Heroku via <insert link>
+Site is deployed to Heroku via https://vast-ravine-78774.herokuapp.com/
 
 ## Description 
 
