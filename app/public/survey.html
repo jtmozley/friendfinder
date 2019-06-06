@@ -183,7 +183,7 @@
         <div class="container">
           <p>
             <a href="/api/friends">API Friends List</a> |
-            <a href="#">GitHub Repo</a>
+            <a href="https://github.com/jtmozley/friendfinder">GitHub Repo</a>
           </p>
         </div>
       </footer>
@@ -202,11 +202,11 @@
           </div>
           <div class="modal-body">
             <h2 id="match-name"></h2>
-            <!-- <img
-              id="match-img"
+            <div>
+              <img id="match-img"
               src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"
-              alt=""
-            /> -->
+              class="" alt="" style="width: 568px; height: auto;"" />
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">
@@ -220,34 +220,94 @@
 </html>
 
 <script type="text/javascript">
-
   $("#submit").click(function(event) {
     event.preventDefault();
 
     const scores = [];
 
-    scores.push(JSON.parse($("#q1").val().trim()));
-    scores.push(JSON.parse($("#q2").val().trim()));
-    scores.push(JSON.parse($("#q3").val().trim()));
-    scores.push(JSON.parse($("#q4").val().trim()));
-    scores.push(JSON.parse($("#q5").val().trim()));
-    scores.push(JSON.parse($("#q6").val().trim()));
-    scores.push(JSON.parse($("#q7").val().trim()));
-    scores.push(JSON.parse($("#q8").val().trim()));
-    scores.push(JSON.parse($("#q9").val().trim()));
-    scores.push(JSON.parse($("#q10").val().trim()));
+    scores.push(
+      JSON.parse(
+        $("#q1")
+          .val()
+          .trim()
+      )
+    );
+    scores.push(
+      JSON.parse(
+        $("#q2")
+          .val()
+          .trim()
+      )
+    );
+    scores.push(
+      JSON.parse(
+        $("#q3")
+          .val()
+          .trim()
+      )
+    );
+    scores.push(
+      JSON.parse(
+        $("#q4")
+          .val()
+          .trim()
+      )
+    );
+    scores.push(
+      JSON.parse(
+        $("#q5")
+          .val()
+          .trim()
+      )
+    );
+    scores.push(
+      JSON.parse(
+        $("#q6")
+          .val()
+          .trim()
+      )
+    );
+    scores.push(
+      JSON.parse(
+        $("#q7")
+          .val()
+          .trim()
+      )
+    );
+    scores.push(
+      JSON.parse(
+        $("#q8")
+          .val()
+          .trim()
+      )
+    );
+    scores.push(
+      JSON.parse(
+        $("#q9")
+          .val()
+          .trim()
+      )
+    );
+    scores.push(
+      JSON.parse(
+        $("#q10")
+          .val()
+          .trim()
+      )
+    );
 
     const userStats = {
-        name: $("#name").val().trim(),
-        photo: $("#photo").val(),
-        scores: scores
-    }
+      name: $("#name")
+        .val()
+        .trim(),
+      photo: $("#photo").val(),
+      scores: scores
+    };
 
-    console.log(userStats);
-
-    $.post("/api/friends", userStats,
-      function(data) {
-
-      })
+    $.post("/api/friends", userStats, function(data) {
+      $("#match-name").text(data.name);
+      $("#match-img").attr("src", data.photo);
+      $("#results-modal").modal("toggle");
+    });
   });
 </script>
